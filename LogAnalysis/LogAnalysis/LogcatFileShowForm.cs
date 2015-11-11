@@ -25,9 +25,9 @@ namespace LogAnalysis
         public void InitListView()
         {
             //-1按照内容定义宽度，-2按照标题定义宽度
-            this.listView1.Columns.Add("log文件名", -1, HorizontalAlignment.Left);
-            this.listView1.Columns.Add("log文件开始时间", -2, HorizontalAlignment.Left);
-            this.listView1.Columns.Add("WIFI断开次数", -2, HorizontalAlignment.Left);
+            this.listView1.Columns.Add("log name", -1, HorizontalAlignment.Left);
+            this.listView1.Columns.Add("log begin time", -2, HorizontalAlignment.Left);
+            this.listView1.Columns.Add("WIFI disconnect times", -2, HorizontalAlignment.Left);
 
             this.listView1.BeginUpdate();
             for (int i = 0; i < logcatList.Count; i++)

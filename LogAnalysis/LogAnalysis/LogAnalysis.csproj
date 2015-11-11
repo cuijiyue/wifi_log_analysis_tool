@@ -141,6 +141,9 @@
     <EmbeddedResource Include="ScanResultListView.resx">
       <DependentUpon>ScanResultListView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="WifiTimeForm.resx">
+      <DependentUpon>WifiTimeForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -39,9 +39,9 @@
             this.allSelectCheckBox.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.allSelectCheckBox.Location = new System.Drawing.Point(13, 13);
             this.allSelectCheckBox.Name = "allSelectCheckBox";
-            this.allSelectCheckBox.Size = new System.Drawing.Size(61, 25);
+            this.allSelectCheckBox.Size = new System.Drawing.Size(56, 25);
             this.allSelectCheckBox.TabIndex = 0;
-            this.allSelectCheckBox.Text = "全选";
+            this.allSelectCheckBox.Text = "ALL";
             this.allSelectCheckBox.UseVisualStyleBackColor = true;
             this.allSelectCheckBox.CheckedChanged += new System.EventHandler(this.allSelectCheckBox_CheckedChanged);
             // 
@@ -52,7 +52,7 @@
             this.startButton.Name = "startButton";
             this.startButton.Size = new System.Drawing.Size(93, 32);
             this.startButton.TabIndex = 1;
-            this.startButton.Text = "开始";
+            this.startButton.Text = "Start";
             this.startButton.UseVisualStyleBackColor = true;
             this.startButton.Click += new System.EventHandler(this.startButton_Click);
             // 

@@ -63,7 +63,7 @@
             this.textTagPage.Padding = new System.Windows.Forms.Padding(3);
             this.textTagPage.Size = new System.Drawing.Size(721, 349);
             this.textTagPage.TabIndex = 0;
-            this.textTagPage.Text = "概览";
+            this.textTagPage.Text = "overview";
             this.textTagPage.UseVisualStyleBackColor = true;
             // 
             // totalMsgTextBox
@@ -86,7 +86,7 @@
             this.HistogramTabPage.Padding = new System.Windows.Forms.Padding(3);
             this.HistogramTabPage.Size = new System.Drawing.Size(721, 349);
             this.HistogramTabPage.TabIndex = 1;
-            this.HistogramTabPage.Text = "柱状图";
+            this.HistogramTabPage.Text = "detail bar_chart";
             this.HistogramTabPage.UseVisualStyleBackColor = true;
             // 
             // panel1
@@ -119,7 +119,7 @@
             this.ClientSize = new System.Drawing.Size(731, 379);
             this.Controls.Add(this.tabControl1);
             this.Name = "WifiTimeForm";
-            this.Text = "Wifi各阶段时间分析";
+            this.Text = "wifi_stage_time";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.textTagPage.ResumeLayout(false);

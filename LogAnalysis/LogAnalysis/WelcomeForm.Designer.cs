@@ -50,7 +50,7 @@
             this.groupBox1.Size = new System.Drawing.Size(411, 100);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "拖入目录(旧版log文件，zoom)";
+            this.groupBox1.Text = "Drag floder in(for zoom)";
             // 
             // oldLogDir
             // 
@@ -72,7 +72,7 @@
             this.groupBox2.Size = new System.Drawing.Size(405, 100);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "拖入目录(新版log，X3)";
+            this.groupBox2.Text = "Drag floder in";
             // 
             // newLogDir
             // 
@@ -88,21 +88,23 @@
             // 
             // oldLogDirStart
             // 
+            this.oldLogDirStart.Font = new System.Drawing.Font("黑体", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.oldLogDirStart.Location = new System.Drawing.Point(429, 29);
             this.oldLogDirStart.Name = "oldLogDirStart";
             this.oldLogDirStart.Size = new System.Drawing.Size(75, 80);
             this.oldLogDirStart.TabIndex = 3;
-            this.oldLogDirStart.Text = "开始";
+            this.oldLogDirStart.Text = "GO";
             this.oldLogDirStart.UseVisualStyleBackColor = true;
             this.oldLogDirStart.Click += new System.EventHandler(this.logDirStart_Click);
             // 
             // newLogDirStart
             // 
+            this.newLogDirStart.Font = new System.Drawing.Font("黑体", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.newLogDirStart.Location = new System.Drawing.Point(429, 145);
             this.newLogDirStart.Name = "newLogDirStart";
             this.newLogDirStart.Size = new System.Drawing.Size(75, 80);
             this.newLogDirStart.TabIndex = 4;
-            this.newLogDirStart.Text = "开始";
+            this.newLogDirStart.Text = "GO";
             this.newLogDirStart.UseVisualStyleBackColor = true;
             this.newLogDirStart.Click += new System.EventHandler(this.newLogStart_Click);
             // 
@@ -114,7 +116,7 @@
             this.groupBox3.Size = new System.Drawing.Size(405, 100);
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "拖入单个log文件";
+            this.groupBox3.Text = "Drag file in";
             // 
             // logFile
             // 
@@ -130,11 +132,12 @@
             // 
             // logFileStart
             // 
+            this.logFileStart.Font = new System.Drawing.Font("黑体", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.logFileStart.Location = new System.Drawing.Point(429, 261);
             this.logFileStart.Name = "logFileStart";
             this.logFileStart.Size = new System.Drawing.Size(75, 80);
             this.logFileStart.TabIndex = 5;
-            this.logFileStart.Text = "开始";
+            this.logFileStart.Text = "GO";
             this.logFileStart.UseVisualStyleBackColor = true;
             this.logFileStart.Click += new System.EventHandler(this.logFileStart_Click);
             // 
@@ -150,7 +153,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "WelcomeForm";
-            this.Text = "WIFI_LOG分析";
+            this.Text = "WIFI_LOG_ANALYSIS";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

@@ -109,9 +109,9 @@
             this.exitLabel.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.exitLabel.Location = new System.Drawing.Point(17, 34);
             this.exitLabel.Name = "exitLabel";
-            this.exitLabel.Size = new System.Drawing.Size(42, 21);
+            this.exitLabel.Size = new System.Drawing.Size(51, 21);
             this.exitLabel.TabIndex = 1;
-            this.exitLabel.Text = "退出";
+            this.exitLabel.Text = "NULL";
             this.exitLabel.MouseEnter += new System.EventHandler(this.label_MouseEnter);
             this.exitLabel.MouseLeave += new System.EventHandler(this.label_MouseLeave);
             // 
@@ -122,9 +122,9 @@
             this.settingLabel.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.settingLabel.Location = new System.Drawing.Point(18, 7);
             this.settingLabel.Name = "settingLabel";
-            this.settingLabel.Size = new System.Drawing.Size(42, 21);
+            this.settingLabel.Size = new System.Drawing.Size(51, 21);
             this.settingLabel.TabIndex = 0;
-            this.settingLabel.Text = "设置";
+            this.settingLabel.Text = "NULL";
             this.settingLabel.MouseEnter += new System.EventHandler(this.label_MouseEnter);
             this.settingLabel.MouseLeave += new System.EventHandler(this.label_MouseLeave);
             // 
@@ -163,9 +163,9 @@
             this.label1.Location = new System.Drawing.Point(11, 8);
             this.label1.Margin = new System.Windows.Forms.Padding(1);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 20);
+            this.label1.Size = new System.Drawing.Size(66, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "软件配置";
+            this.label1.Text = "SETTING";
             // 
             // configMenuPanel
             // 
@@ -299,9 +299,9 @@
             this.label2.Location = new System.Drawing.Point(11, 8);
             this.label2.Margin = new System.Windows.Forms.Padding(1);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 20);
+            this.label2.Size = new System.Drawing.Size(58, 20);
             this.label2.TabIndex = 2;
-            this.label2.Text = "配置文件";
+            this.label2.Text = "configs";
             // 
             // configPictureBox
             // 
@@ -336,10 +336,10 @@
             this.wifiTimeLabel.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.wifiTimeLabel.Location = new System.Drawing.Point(4, 38);
             this.wifiTimeLabel.Name = "wifiTimeLabel";
-            this.wifiTimeLabel.Size = new System.Drawing.Size(120, 21);
+            this.wifiTimeLabel.Size = new System.Drawing.Size(126, 21);
             this.wifiTimeLabel.TabIndex = 1;
             this.wifiTimeLabel.Tag = "22";
-            this.wifiTimeLabel.Text = "Wifi各阶段耗时";
+            this.wifiTimeLabel.Text = "wifi_stage_time";
             this.wifiTimeLabel.Click += new System.EventHandler(this.logactLabel_Click);
             this.wifiTimeLabel.MouseEnter += new System.EventHandler(this.label_MouseEnter);
             this.wifiTimeLabel.MouseLeave += new System.EventHandler(this.label_MouseLeave);
@@ -351,10 +351,10 @@
             this.logactLabel.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.logactLabel.Location = new System.Drawing.Point(14, 7);
             this.logactLabel.Name = "logactLabel";
-            this.logactLabel.Size = new System.Drawing.Size(93, 21);
+            this.logactLabel.Size = new System.Drawing.Size(61, 21);
             this.logactLabel.TabIndex = 0;
             this.logactLabel.Tag = "21";
-            this.logactLabel.Text = "Logcat分析";
+            this.logactLabel.Text = "Logcat";
             this.logactLabel.Click += new System.EventHandler(this.logactLabel_Click);
             this.logactLabel.MouseEnter += new System.EventHandler(this.label_MouseEnter);
             this.logactLabel.MouseLeave += new System.EventHandler(this.label_MouseLeave);
@@ -394,9 +394,9 @@
             this.logcatLabel.Location = new System.Drawing.Point(11, 8);
             this.logcatLabel.Margin = new System.Windows.Forms.Padding(1);
             this.logcatLabel.Name = "logcatLabel";
-            this.logcatLabel.Size = new System.Drawing.Size(64, 20);
+            this.logcatLabel.Size = new System.Drawing.Size(51, 20);
             this.logcatLabel.TabIndex = 0;
-            this.logcatLabel.Text = "LOGCAT";
+            this.logcatLabel.Text = "STATE";
             // 
             // mainPanel
             // 

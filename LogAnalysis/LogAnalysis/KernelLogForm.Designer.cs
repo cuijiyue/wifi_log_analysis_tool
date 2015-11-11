@@ -41,7 +41,7 @@
             this.showKernelLogButton.Name = "showKernelLogButton";
             this.showKernelLogButton.Size = new System.Drawing.Size(136, 23);
             this.showKernelLogButton.TabIndex = 0;
-            this.showKernelLogButton.Text = "UE打开kernel log";
+            this.showKernelLogButton.Text = "Open kernel log";
             this.showKernelLogButton.UseVisualStyleBackColor = true;
             this.showKernelLogButton.Click += new System.EventHandler(this.showKernelLogButton_Click);
             // 
@@ -64,7 +64,7 @@
             this.searchButton.Name = "searchButton";
             this.searchButton.Size = new System.Drawing.Size(75, 23);
             this.searchButton.TabIndex = 2;
-            this.searchButton.Text = "下一个";
+            this.searchButton.Text = "Search";
             this.searchButton.UseVisualStyleBackColor = true;
             this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
             // 

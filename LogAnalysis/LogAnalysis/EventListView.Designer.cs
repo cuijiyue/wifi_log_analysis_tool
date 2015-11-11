@@ -63,9 +63,9 @@
             this.upCheckBox.AutoSize = true;
             this.upCheckBox.Location = new System.Drawing.Point(107, 12);
             this.upCheckBox.Name = "upCheckBox";
-            this.upCheckBox.Size = new System.Drawing.Size(72, 16);
+            this.upCheckBox.Size = new System.Drawing.Size(66, 16);
             this.upCheckBox.TabIndex = 1;
-            this.upCheckBox.Text = "向上传递";
+            this.upCheckBox.Text = "EventUp";
             this.upCheckBox.UseVisualStyleBackColor = true;
             // 
             // downCheckBox
@@ -73,11 +73,10 @@
             this.downCheckBox.AutoSize = true;
             this.downCheckBox.Location = new System.Drawing.Point(23, 12);
             this.downCheckBox.Name = "downCheckBox";
-            this.downCheckBox.Size = new System.Drawing.Size(72, 16);
+            this.downCheckBox.Size = new System.Drawing.Size(66, 16);
             this.downCheckBox.TabIndex = 2;
-            this.downCheckBox.Text = "向下传递";
+            this.downCheckBox.Text = "CmdDown";
             this.downCheckBox.UseVisualStyleBackColor = true;
-            //this.downCheckBox.CheckedChanged += new System.EventHandler(this.downCheckBox_CheckedChanged);
             // 
             // Renewbutton
             // 
@@ -85,7 +84,7 @@
             this.Renewbutton.Name = "Renewbutton";
             this.Renewbutton.Size = new System.Drawing.Size(86, 23);
             this.Renewbutton.TabIndex = 3;
-            this.Renewbutton.Text = "更新";
+            this.Renewbutton.Text = "Refresh";
             this.Renewbutton.UseVisualStyleBackColor = true;
             this.Renewbutton.Click += new System.EventHandler(this.Renewbutton_Click);
             // 

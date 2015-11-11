@@ -316,7 +316,7 @@ namespace LogAnalysis
                     this.mainPanel.Controls.Clear();
                     this.mainPanel.Controls.Add(this.logcatLeftTableLayoutPanel);
                     this.mainPanel.Controls.Add(this.logcatPanel);
-                    this.Text = "logcat 分析";
+                    this.Text = "logcat analysis";
                     break;
                 case 22:
                     //Wifi Time
@@ -328,7 +328,7 @@ namespace LogAnalysis
                     form.FormBorderStyle = FormBorderStyle.None;
                     form.Dock = DockStyle.Fill;
                     form.Show();
-                    this.Text = "WIFI 各阶段耗时分析";
+                    this.Text = "WIFI stage time use";
                     break;
             }
         }
@@ -389,10 +389,10 @@ namespace LogAnalysis
             DriverEvent = driver;
 
             upButton = new Button();
-            upButton.Text = string.Format("上层事件:" + HalEvent.Count);
+            upButton.Text = string.Format("FWKS ⇅:" + HalEvent.Count);
 
             downButton = new Button();
-            downButton.Text = string.Format("驱动事件" + DriverEvent.Count);
+            downButton.Text = string.Format("DRIVER ⇅" + DriverEvent.Count);
 
             //设置上下事件按钮点击弹出窗口
             upButton.Click += new EventHandler(upButton_click);
@@ -439,7 +439,7 @@ namespace LogAnalysis
         {
             scanResultsArray = LOGDLL.getScanResults(log);
             scanResultButton = new Button();
-            scanResultButton.Text = "wps扫描:" + scanResultsArray.Length;
+            scanResultButton.Text = "scan_bss:" + scanResultsArray.Length;
             //添加点击事件
             scanResultButton.Click += new EventHandler(scanResultButton_click);
         }

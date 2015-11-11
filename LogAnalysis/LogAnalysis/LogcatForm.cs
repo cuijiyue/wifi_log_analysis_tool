@@ -19,7 +19,7 @@ namespace LogAnalysis
 
 
         //log类别，存储到数组中
-        private static String[] classLog = { "屏幕", "WIFI设置", "扫描", "Defult", "Initial", "SupplicantStarting", "SupplicantStarted", "DriverStarting", "DriverStarted", "ScanMode", "ConnectMode", "L2Connected", "ObtainingIp", "VerifyingLink", "Connected", "Roaming", "Disconnecting", "Disconnected", "WpsRunning", "WaitForP2pDisable", "DriverStopping", "DriverStopped", "SupplicantStopping", "SupplicantStopped", "SoftApStarting", "SoftApStarted", "Tethering", "Tethered", "Untethering", "WIFI.C", "INTERFACE_DISABLED", "INACTIVE", "DISCONNECTED", "SCANNING", "ASSOCIATING", "ASSOCIATED", "AUTHENTICATING", "4WAY_HANDSHAKE", "GROUP_HANDSHAKE", "COMPLETED", "驱动事件" };
+        private static String[] classLog = { "SCREEN", "WIFI_SETTING", "扫描", "Defult", "Initial", "SupplicantStarting", "SupplicantStarted", "DriverStarting", "DriverStarted", "ScanMode", "ConnectMode", "L2Connected", "ObtainingIp", "VerifyingLink", "Connected", "Roaming", "Disconnecting", "Disconnected", "WpsRunning", "WaitForP2pDisable", "DriverStopping", "DriverStopped", "SupplicantStopping", "SupplicantStopped", "SoftApStarting", "SoftApStarted", "Tethering", "Tethered", "Untethering", "WIFI.C", "INTERFACE_DISABLED", "INACTIVE", "DISCONNECTED", "SCANNING", "ASSOCIATING", "ASSOCIATED", "AUTHENTICATING", "4WAY_HANDSHAKE", "GROUP_HANDSHAKE", "COMPLETED", "NL80211" };
         //链表，存储左侧每一个label
         List<Label> leftLabelList = new List<Label>();
 
@@ -104,17 +104,17 @@ namespace LogAnalysis
                     wifiFrameworkStateList.Add(logDataList[i]);
                     XPosiotn += controlerWith;
                 }
-                //屏幕状态
+                //SCREEN状态
                 else if (logDataList[i].screenState != null)
                 {
-                    YPositon = getYPosation("屏幕");
+                    YPositon = getYPosation("SCREEN");
                     logDataList[i].point = new Point(XPosiotn, YPositon);
                     screenStateList.Add(logDataList[i]);
                 }
-                //是否进入wifi设置
+                //是否进入WIFI_SETTING
                 else if (logDataList[i].wifiSettingState != null)
                 {
-                    YPositon = getYPosation("WIFI设置");
+                    YPositon = getYPosation("WIFI_SETTING");
                     logDataList[i].point = new Point(XPosiotn, YPositon);
                     screenStateList.Add(logDataList[i]);
                 }                
@@ -169,9 +169,9 @@ namespace LogAnalysis
                 this.pictureBox1.Controls.Add(wpsStateList[i].upButton);
 
                 //添加下层事件按钮
-                wpsStateList[i].downButton.Location = new System.Drawing.Point(wpsStateList[i].point.X - controlerWith + 2, getLabel("驱动事件").Location.Y + 2);
+                wpsStateList[i].downButton.Location = new System.Drawing.Point(wpsStateList[i].point.X - controlerWith + 2, getLabel("NL80211").Location.Y + 2);
                 wpsStateList[i].downButton.Width = controlerWith - 4;
-                wpsStateList[i].downButton.Height = getLabel("驱动事件").Height - 4;
+                wpsStateList[i].downButton.Height = getLabel("NL80211").Height - 4;
                 gph.DrawRectangle(penRec, wpsStateList[i].downButton.Location.X, wpsStateList[i].downButton.Location.Y, wpsStateList[i].downButton.Width, wpsStateList[i].downButton.Height);
                 this.pictureBox1.Controls.Add(wpsStateList[i].downButton);
 
@@ -195,9 +195,9 @@ namespace LogAnalysis
             this.pictureBox1.Controls.Add(wpsStateList[wpsStateList.Count - 1].upButton);
 
             //添加下层事件按钮
-            wpsStateList[wpsStateList.Count - 1].downButton.Location = new System.Drawing.Point(wpsStateList[wpsStateList.Count - 1].point.X - controlerWith + 2, getLabel("驱动事件").Location.Y + 2);
+            wpsStateList[wpsStateList.Count - 1].downButton.Location = new System.Drawing.Point(wpsStateList[wpsStateList.Count - 1].point.X - controlerWith + 2, getLabel("NL80211").Location.Y + 2);
             wpsStateList[wpsStateList.Count - 1].downButton.Width = controlerWith - 4;
-            wpsStateList[wpsStateList.Count - 1].downButton.Height = getLabel("驱动事件").Height - 4;
+            wpsStateList[wpsStateList.Count - 1].downButton.Height = getLabel("NL80211").Height - 4;
             gph.DrawRectangle(penRec, wpsStateList[wpsStateList.Count - 1].downButton.Location.X, wpsStateList[wpsStateList.Count - 1].downButton.Location.Y, wpsStateList[wpsStateList.Count - 1].downButton.Width, wpsStateList[wpsStateList.Count - 1].downButton.Height);
             this.pictureBox1.Controls.Add(wpsStateList[wpsStateList.Count - 1].downButton);
 
@@ -224,11 +224,11 @@ namespace LogAnalysis
             }
 
 
-            //添加其他事件，"屏幕", "扫描", "WIFI设置"
-            //屏幕
+            //添加其他事件，"SCREEN", "扫描", "WIFI_SETTING"
+            //SCREEN
             //if (screenStateList.Count == 0)
             //{
-            //    gph.DrawLine(penEnable, 0, getYPosation("屏幕"), bitmapWidth, getYPosation("屏幕"));
+            //    gph.DrawLine(penEnable, 0, getYPosation("SCREEN"), bitmapWidth, getYPosation("SCREEN"));
             //}
             //else
             //{
@@ -259,10 +259,10 @@ namespace LogAnalysis
             //        gph.DrawLine(penEnable, screenStateList[screenStateList.Count - 1].point.X, screenStateList[screenStateList.Count - 1].point.Y, bitmapWidth, screenStateList[screenStateList.Count - 1].point.Y);
             //}
 
-            ////WIFI设置
+            ////WIFI_SETTING
             //if (wifiSettingStateList.Count == 0)
             //{
-            //    gph.DrawLine(penEnable, 0, getYPosation("屏幕"), bitmapWidth, getYPosation("屏幕"));
+            //    gph.DrawLine(penEnable, 0, getYPosation("SCREEN"), bitmapWidth, getYPosation("SCREEN"));
             //}
             //else
             //{
@@ -353,7 +353,7 @@ namespace LogAnalysis
         ToolTip mToolTip = new ToolTip();     
 
         //log类别，存储到数组中
-        private static String[] classLog = { "开关", "屏幕", "WIFI设置", "当前连接", "Default", "Initial", "SupplicantStarting", "SupplicantStarted", "DriverStarting", "DriverStarted", "ScanMode", "ConnectMode", "L2Connected", "ObtainingIp", "VerifyingLink", "Connected", "Roaming", "Disconnecting", "Disconnected", "WpsRunning", "WaitForP2pDisable", "DriverStopping", "DriverStopped", "SupplicantStopping", "SupplicantStopped", "SoftApStarting", "SoftApStarted", "Tethering", "Tethered", "Untethering", "WIFI.C", "INTERFACE_DISABLED", "INACTIVE", "DISCONNECTED", "SCANNING", "ASSOCIATING", "ASSOCIATED", "AUTHENTICATING", "4WAY_HANDSHAKE", "GROUP_HANDSHAKE", "COMPLETED", "驱动事件" };
+        private static String[] classLog = { "WIFI_SWITCH", "SCREEN", "WIFI_SETTING", "RSSI_CONNECTED", "Default", "Initial", "SupplicantStarting", "SupplicantStarted", "DriverStarting", "DriverStarted", "ScanMode", "ConnectMode", "L2Connected", "ObtainingIp", "VerifyingLink", "Connected", "Roaming", "Disconnecting", "Disconnected", "WpsRunning", "WaitForP2pDisable", "DriverStopping", "DriverStopped", "SupplicantStopping", "SupplicantStopped", "SoftApStarting", "SoftApStarted", "Tethering", "Tethered", "Untethering", "WIFI.C", "INTERFACE_DISABLED", "INACTIVE", "DISCONNECTED", "SCANNING", "ASSOCIATING", "ASSOCIATED", "AUTHENTICATING", "4WAY_HANDSHAKE", "GROUP_HANDSHAKE", "COMPLETED", "NL80211" };
         //链表，存储左侧每一个label
         List<Label> leftLabelList = new List<Label>();
 
@@ -443,31 +443,31 @@ namespace LogAnalysis
                 //wifi开启关闭
                 else if (logDataList[i].wifiOpenCLose != null)
                 {
-                    YPositon = getYPosation("开关");
+                    YPositon = getYPosation("WIFI_SWITCH");
                     logDataList[i].point = new Point(XPosiotn, YPositon);
                     wifiOpenCloseList.Add(logDataList[i]);
                     XPosiotn += controlerWith;
                 }
-                //屏幕状态
+                //SCREEN状态
                 else if (logDataList[i].screenState != null)
                 {
-                    YPositon = getYPosation("屏幕");
+                    YPositon = getYPosation("SCREEN");
                     logDataList[i].point = new Point(XPosiotn, YPositon);
                     screenStateList.Add(logDataList[i]);
                     XPosiotn += controlerWith;
                 }
-                //是否进入wifi设置
+                //是否进入WIFI_SETTING
                 else if (logDataList[i].wifiSettingState != null)
                 {
-                    YPositon = getYPosation("WIFI设置");
+                    YPositon = getYPosation("WIFI_SETTING");
                     logDataList[i].point = new Point(XPosiotn, YPositon);
                     wifiSettingStateList.Add(logDataList[i]);
                     XPosiotn += controlerWith;
                 }
-                //当前连接
+                //RSSI_CONNECTED
                 else if (logDataList[i].wifiConnectedState != null)
                 {
-                    YPositon = getYPosation("当前连接");
+                    YPositon = getYPosation("RSSI_CONNECTED");
                     logDataList[i].point = new Point(XPosiotn, YPositon);
                     wifiConnectedStateList.Add(logDataList[i]);
                 }
@@ -537,9 +537,9 @@ namespace LogAnalysis
                 this.pictureBox1.Controls.Add(wpsStateList[i].upButton);
 
                 //添加下层事件按钮
-                wpsStateList[i].downButton.Location = new System.Drawing.Point(wpsStateList[i].point.X - controlerWith + 2, getLabel("驱动事件").Location.Y + 2);
+                wpsStateList[i].downButton.Location = new System.Drawing.Point(wpsStateList[i].point.X - controlerWith + 2, getLabel("NL80211").Location.Y + 2);
                 wpsStateList[i].downButton.Width = controlerWith - 4;
-                wpsStateList[i].downButton.Height = getLabel("驱动事件").Height - 4;
+                wpsStateList[i].downButton.Height = getLabel("NL80211").Height - 4;
                 gph.DrawRectangle(penRec, wpsStateList[i].downButton.Location.X, wpsStateList[i].downButton.Location.Y, wpsStateList[i].downButton.Width, wpsStateList[i].downButton.Height);
                 this.pictureBox1.Controls.Add(wpsStateList[i].downButton);
 
@@ -644,9 +644,9 @@ namespace LogAnalysis
             this.pictureBox1.Controls.Add(wpsStateList[wpsStateList.Count - 1].upButton);
 
             //添加下层事件按钮
-            wpsStateList[wpsStateList.Count - 1].downButton.Location = new System.Drawing.Point(wpsStateList[wpsStateList.Count - 1].point.X - controlerWith + 2, getLabel("驱动事件").Location.Y + 2);
+            wpsStateList[wpsStateList.Count - 1].downButton.Location = new System.Drawing.Point(wpsStateList[wpsStateList.Count - 1].point.X - controlerWith + 2, getLabel("NL80211").Location.Y + 2);
             wpsStateList[wpsStateList.Count - 1].downButton.Width = controlerWith - 4;
-            wpsStateList[wpsStateList.Count - 1].downButton.Height = getLabel("驱动事件").Height - 4;
+            wpsStateList[wpsStateList.Count - 1].downButton.Height = getLabel("NL80211").Height - 4;
             gph.DrawRectangle(penRec, wpsStateList[wpsStateList.Count - 1].downButton.Location.X, wpsStateList[wpsStateList.Count - 1].downButton.Location.Y, wpsStateList[wpsStateList.Count - 1].downButton.Width, wpsStateList[wpsStateList.Count - 1].downButton.Height);
             this.pictureBox1.Controls.Add(wpsStateList[wpsStateList.Count - 1].downButton);
 
@@ -682,8 +682,8 @@ namespace LogAnalysis
 
 
 
-            //添加其他事件，"屏幕", "当前连接", "WIFI设置", wifi开启关闭
-            //当前连接
+            //添加其他事件，"SCREEN", "RSSI_CONNECTED", "WIFI_SETTING", wifi开启关闭
+            //RSSI_CONNECTED
             //防止叠加，若是同一位置的数据，显示在弹出的气泡中,待进行
             //int preX = -1;
             Label wifiConnectedStateLable = null;
@@ -733,10 +733,10 @@ namespace LogAnalysis
             }
 
 
-            //屏幕
+            //SCREEN
             if (screenStateList.Count == 0)
             {
-                gph.DrawLine(penEnable, 0, getYPosation("屏幕"), bitmapWidth, getYPosation("屏幕"));
+                gph.DrawLine(penEnable, 0, getYPosation("SCREEN"), bitmapWidth, getYPosation("SCREEN"));
             }
             else
             {
@@ -774,10 +774,10 @@ namespace LogAnalysis
                     gph.DrawLine(penEnable, screenStateList[screenStateList.Count - 1].point.X, screenStateList[screenStateList.Count - 1].point.Y, bitmapWidth, screenStateList[screenStateList.Count - 1].point.Y);
             }
 
-            ////WIFI设置
+            ////WIFI_SETTING
             if (wifiSettingStateList.Count == 0)
             {
-                gph.DrawLine(penEnable, 0, getYPosation("WIFI设置"), bitmapWidth, getYPosation("WIFI设置"));
+                gph.DrawLine(penEnable, 0, getYPosation("WIFI_SETTING"), bitmapWidth, getYPosation("WIFI_SETTING"));
             }
             else
             {
