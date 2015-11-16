@@ -41,7 +41,7 @@ namespace LogAnalysis
             uePath = INIHelper.Read("TXTEDIT", "uePath", iniFile);
             if (uePath == "123")
             {
-                MyDialog dialog = new MyDialog("请添加UE的路径(输入或拖放)");
+                MyDialog dialog = new MyDialog("and the UE exe path");
                 if(dialog.ShowDialog(this) == DialogResult.OK)
                 {
                     Console.WriteLine(dialog.result);
@@ -80,7 +80,7 @@ namespace LogAnalysis
                 WelcomeForm.logDirPath = oldLogDir.Text;
                 if (Directory.GetFiles(WelcomeForm.logDirPath, "logcat" + "*", SearchOption.AllDirectories).Length == 0)
                 {
-                    MessageBox.Show("哎呀，你好像弄错目录了的说！", "没有找到log文件", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("ops, wrong floder", "didn't find log files", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {
@@ -91,7 +91,7 @@ namespace LogAnalysis
             }
             else
             {
-                MessageBox.Show("哎呀，应该输入目录的说！", "不是目录", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("ops, should be a floder", "not a floder", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
         }
@@ -124,7 +124,7 @@ namespace LogAnalysis
                 WelcomeForm.logDirPath = newLogDir.Text;
                 if (Directory.GetFiles(WelcomeForm.logDirPath, "mainlog" + "*", SearchOption.AllDirectories).Length == 0)
                 {
-                    MessageBox.Show("哎呀，你好像弄错目录了的说！", "没有找到log文件", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("ops, wrong floder", "didn't find log files", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {
@@ -134,7 +134,7 @@ namespace LogAnalysis
             }
             else
             {
-                MessageBox.Show("哎呀，应该输入目录的说！", "不是目录", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("ops, should be a floder", "not a floder", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
         //拖放新版log工作完成
@@ -168,7 +168,7 @@ namespace LogAnalysis
                 WelcomeForm.logFileName = this.logFile.Text;
                 if (logFileName == null)
                 {
-                    MessageBox.Show("哎呀，输入文件错误！", "没有找到log文件", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("ops，wrong file", "not a logat files", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {
@@ -184,7 +184,7 @@ namespace LogAnalysis
             }
             else
             {
-                MessageBox.Show("哎呀，应该输入文件的说！", "不是文件", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("ops，should be a files！", "not file", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
         //拖放新版log工作完成

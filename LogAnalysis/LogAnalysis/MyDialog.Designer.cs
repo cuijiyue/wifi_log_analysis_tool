@@ -52,7 +52,7 @@
             this.OkButton.Name = "OkButton";
             this.OkButton.Size = new System.Drawing.Size(75, 23);
             this.OkButton.TabIndex = 1;
-            this.OkButton.Text = "确定";
+            this.OkButton.Text = "ensure";
             this.OkButton.UseVisualStyleBackColor = true;
             this.OkButton.Click += new System.EventHandler(this.ok_Click);
             // 
@@ -62,7 +62,7 @@
             this.ConcelButton.Name = "ConcelButton";
             this.ConcelButton.Size = new System.Drawing.Size(75, 23);
             this.ConcelButton.TabIndex = 2;
-            this.ConcelButton.Text = "取消";
+            this.ConcelButton.Text = "cancel";
             this.ConcelButton.UseVisualStyleBackColor = true;
             this.ConcelButton.Click += new System.EventHandler(this.ConcelButton_Click);
             // 
@@ -75,7 +75,7 @@
             this.Controls.Add(this.OkButton);
             this.Controls.Add(this.textBox1);
             this.Name = "MyDialog";
-            this.Text = "警告";
+            this.Text = "warning";
             this.Load += new System.EventHandler(this.MyDialog_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

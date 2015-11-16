@@ -389,10 +389,10 @@ namespace LogAnalysis
             DriverEvent = driver;
 
             upButton = new Button();
-            upButton.Text = string.Format("FWKS ⇅:" + HalEvent.Count);
+            upButton.Text = string.Format("FWKS ⇅ :" + HalEvent.Count);
 
             downButton = new Button();
-            downButton.Text = string.Format("DRIVER ⇅" + DriverEvent.Count);
+            downButton.Text = string.Format("DRIVER ⇅ :" + DriverEvent.Count);
 
             //设置上下事件按钮点击弹出窗口
             upButton.Click += new EventHandler(upButton_click);
