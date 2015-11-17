@@ -184,7 +184,7 @@ namespace LogAnalysis
             }
             else
             {
-                MessageBox.Show("ops，should be a files！", "not file", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("ops，should be a file！", "not file", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
         //拖放新版log工作完成

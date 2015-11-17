@@ -47,11 +47,8 @@ C:\Users\cuijiyue\Desktop\C#\LogAnalysis\LogAnalysis\obj\Release\LogAnalysis.Sca
 C:\Users\cuijiyue\Desktop\C#\LogAnalysis\LogAnalysis\obj\Release\LogAnalysis.csproj.GenerateResource.Cache
 C:\Users\cuijiyue\Desktop\C#\LogAnalysis\LogAnalysis\obj\Release\LogAnalysis.KernelLogForm.resources
 D:\wifi_log_analysis_tool\LogAnalysis\LogAnalysis\bin\Release\LogAnalysis.exe.config
-D:\wifi_log_analysis_tool\LogAnalysis\LogAnalysis\obj\Release\LogAnalysis.exe
-D:\wifi_log_analysis_tool\LogAnalysis\LogAnalysis\obj\Release\LogAnalysis.pdb
 D:\wifi_log_analysis_tool\LogAnalysis\LogAnalysis\bin\Release\LogAnalysis.exe
 D:\wifi_log_analysis_tool\LogAnalysis\LogAnalysis\bin\Release\LogAnalysis.pdb
-D:\wifi_log_analysis_tool\LogAnalysis\LogAnalysis\obj\Release\LogAnalysis.csprojResolveAssemblyReference.cache
 D:\wifi_log_analysis_tool\LogAnalysis\LogAnalysis\obj\Release\LogAnalysis.EventListView.resources
 D:\wifi_log_analysis_tool\LogAnalysis\LogAnalysis\obj\Release\LogAnalysis.KernelLogForm.resources
 D:\wifi_log_analysis_tool\LogAnalysis\LogAnalysis\obj\Release\LogAnalysis.LogcatFileShowForm.resources
@@ -63,3 +60,5 @@ D:\wifi_log_analysis_tool\LogAnalysis\LogAnalysis\obj\Release\LogAnalysis.Proper
 D:\wifi_log_analysis_tool\LogAnalysis\LogAnalysis\obj\Release\LogAnalysis.ScanResultListView.resources
 D:\wifi_log_analysis_tool\LogAnalysis\LogAnalysis\obj\Release\LogAnalysis.WifiTimeForm.resources
 D:\wifi_log_analysis_tool\LogAnalysis\LogAnalysis\obj\Release\LogAnalysis.csproj.GenerateResource.Cache
+D:\wifi_log_analysis_tool\LogAnalysis\LogAnalysis\obj\Release\LogAnalysis.exe
+D:\wifi_log_analysis_tool\LogAnalysis\LogAnalysis\obj\Release\LogAnalysis.pdb

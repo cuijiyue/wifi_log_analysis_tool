@@ -336,7 +336,7 @@ namespace LogAnalysis
 
 
 
-    public partial class DRIVERLogcatShow
+    public partial class LogcatShow
     {
         TableLayoutPanel tableLayoutPanel1;
         PictureBox pictureBox1;
